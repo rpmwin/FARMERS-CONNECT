@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  /* background-color: black; */
+  /* background-image: url("https://source.unsplash.com/1600x900/?agriculture");   */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #ffffff90;
+  box-shadow: 15px black;
+  padding: 30px;  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #5c9ee7;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #3e82f7;
+}

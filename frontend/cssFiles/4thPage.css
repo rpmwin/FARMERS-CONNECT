@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll; /* or auto */
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.dashboard-container {
+  /* max-width: px;
+   */
+   width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  /* background-color:#116A7B;
+   */
+   /* background-image: url('https://img.freepik.com/free-vector/nature-scene-rural-land-agriculture-grassland-abtract-silhouette-asian-farmers-working-rice-field-illustration_1150-37317.jpg?w=996&t=st=1703323756~exp=1703324356~hmac=79aef98c8db36229abe492e7e51ab161857fd0e1289d855dd93760e8536f4cd0'); */
+   background-image: url('https://img.freepik.com/free-photo/drone-spraying-fertilizer-vegetable-green-plants-agriculture-technology-farm-automation_35913-2569.jpg?w=1060&t=st=1703325618~exp=1703326218~hmac=875cbd0c4f9c27a86b99852fafa9fc72d433e10af1ecb41e5394bad5ab3b07b6');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #ffffff;
+}
+
+.summary {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* background-color: #fff; */
+  background-image: url();
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for each sub-section container within the summary */
+.summary {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for the box containing each sub-section */
+.summary {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styles for the box containing each sub-section */
+.sub-section-box {
+  flex: 0 0 calc(50% - 10px); /* 50% width with spacing between boxes */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+}
+
+/* Styles for each sub-section container within the summary */
+.weather-info,
+.financial-overview,
+.crop-health {
+  /*   */
+  /* background-image: url('https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFncmljdWx0dXJlfGVufDB8fDB8fHww'); */
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+h3 {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+  color: white;
+}
+
+.crop-management,
+.marketplace {
+  margin-top: 20px;
+}
+
+/* Crop Management Section */
+/* dashboard.css */
+
+/* ... (previous styles) */
+
+/* Crop Management Section */
+#crop-list {
+  list-style: none;
+  padding: 100px;
+}
+
+/* Style for each crop list item */
+.crop-list-item {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Styles for the "Add Crop" button */
+.add-crop-button,.getInfo{
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Display as block to make it full-width */
+  margin-top: 10px; /* Add some space above the button */
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-crop-button:hover {
+  background-color: #45a049;
+}
+.getInfo{
+  position: absolute;
+  bottom: 0%;
+  left: 85%;
+  
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal-box{
+    background-color:bisque;
+    width:50%;
+    transform: translate(50%);
+
+}
+
+.modal-content {
+  background-color: #ccccff;
+  margin: 10% auto;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #4caf50;
+}
+
+nav {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  padding-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #720541;
+}
+
+.logo-container {
+  /* Center the logo horizontally */
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  /* Adjust the styling for your logo */
+  max-width: 100px;
+  max-height: 50px;
+  margin: 0 auto; /* Center the logo horizontally within the container */
+}
+
+.user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-left: 10px;
+}
+
+.target1{
+  position: absolute;
+  top: 30%;
+}
+.target2{
+  position: absolute;
+  top: 40%;
+}
+.target3{
+  position: absolute;
+  top: 50%;
+}
+
+#sub{
+  position: absolute;
+
+
+}

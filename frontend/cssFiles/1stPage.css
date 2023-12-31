@@ -1,0 +1,33 @@
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .background-image {
+        /* background-image: url('https://source.unsplash.com/1600x900/?agriculture'); */
+        background-image: url("landingpageimg.jpg");
+        background-size: cover;
+        background-position: center;
+        animation-name: opac;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      }
+      /* Custom styles for additional tweaks */
+      .form-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        animation-name: opac;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes opac {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }

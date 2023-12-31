@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FARMERS CONNECT DASHBOARD</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getUserData()">
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <!-- Replace the src attribute with the path to your logo image -->
+          <img src="LOGOnew111.png" alt="Company Logo" />
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+      <div class="user-info">
+        <!-- Replace "John Doe" with the actual username -->
+        <span id="userName">Welcome, John Doe</span>
+      </div>
+    </nav>
+
+    <div class="dashboard-container">
+      <h1>Welcome to Farmer Dashboard</h1>
+
+      <!-- Add these elements to your existing HTML structure -->
+      <div class="summary">
+        <h2>Summary</h2>
+        <p class="target1">
+          Total Cultivated Area: <span id="cultivated-area">100 acres</span>
+        </p>
+        <p class="target2">Total Crops: <span id="total-crops">5</span></p>
+        <p class="target3">Estimated Income: $<span id="estimated-income">10,000</span></p>
+
+        <!-- New elements for additional summary information -->
+        <div class="weather-info">
+          <h3>Weather Information</h3>
+          <p><span id="temperature">--</span></p>
+          <p><span id="humidity">--</span></p>
+          <p><span id="precipitation">--</span></p>
+        </div>
+
+        <div class="financial-overview">
+          <h3>Financial Overview</h3>
+          <p>Total Revenue: $<span id="total-revenue">--</span></p>
+          <p>Total Expenses: $<span id="total-expenses">--</span></p>
+          <p>Net Income: $<span id="net-income">--</span></p>
+        </div>
+
+        <div class="crop-health">
+          <h3>Crop Health Monitoring</h3>
+          <p>Current Crop Status: <span id="crop-status">--</span></p>
+          <p>
+            Health Recommendations: <span id="health-recommendations">--</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="crop-management">
+        <h2>Crop Management</h2>
+        <ul id="crop-list">
+          <div id="loadingIndicator" style="display: none">
+            <!-- Add your loading symbol here (e.g., spinner or loading text) -->
+            Loading...
+          </div>
+          <!-- Crop information will be dynamically populated here -->
+        </ul>
+        <button class="add-crop-button" onclick="openAddCropModal()">
+          Add Crop
+        </button>
+
+        <button class="getInfo" onclick="openAddCropModal()">
+            GET INFO
+          </button>
+      </div>
+
+      
+      <div id="userDataDisplay"></div>
+    </div>
+
+    <!-- Modal for adding a new crop -->
+    <div id="addCropModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-box">
+          <span class="close" onclick="closeAddCropModal()">&times;</span>
+          <h2>Add Crop</h2>
+          <!-- Form for adding a new crop -->
+          <form id="addCropForm">
+            <label for="cropName">Crop Name:</label>
+            <select id="CROP" name="CROP" required>
+              <option value="">Select A CROP</option>
+              <option value="WHEAT">WHEAT</option>
+              <option value="RAGI">RAGI</option>
+              <option value="TOMATO">TOMATO</option>
+              <option value="ONION">ONION</option>
+              <option value="CABBAGE">CABBAGE</option>
+              <option value="ROSE">ROSE</option>
+              <option value="JASMINE">JASMINE</option>
+              <option value="Raichur">CABBAGE</option>
+              <option value="Raichur">CABBAGE</option>
+            </select>
+            <br />
+
+            <label for="plantingDate">Planting Date:</label>
+            <input type="date" id="plantingDate" name="plantingDate" required />
+            <br />
+
+            <label for="harvestDate">Harvest Date:</label>
+            <input type="date" id="harvestDate" name="harvestDate" required />
+            <br />
+
+            <label for="estimatedYield">Estimated Yield (kg):</label>
+            <input
+              type="number"
+              id="estimatedYield"
+              name="estimatedYield"
+              required
+            />
+            <br />
+
+            <button type="submit" id="sub">Add Crop</button>
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../jsfiles/4thpage.js"></script>
+  </body>
+</html>

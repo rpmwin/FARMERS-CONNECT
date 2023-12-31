@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retailer Login</title>
+    <link rel="stylesheet" href="../cssFiles/retailerLogin.css">
+    <!-- Link your CSS file here if needed -->
+</head>
+<body style="overflow-y: hidden;">
+    <img src="loginBg.jpg" style="width: 100%;  position: absolute; z-index: -1; top: -25%;">
+
+    <div id="form" style="position: absolute; top: 60%; left: 52%; transform: translate(-50%,-50%); width: 450px;">
+
+        <h1 style="color: rgb(255, 2, 2); background-color: azure; border-radius: 10px; padding: 15px; user-select: none;">Retailer Login</h1>
+
+        <!-- Create a form for retailer login -->
+        <form id="retailerLoginForm" onsubmit="submitRetailerLogin(); return false;" style="user-select: none; background-color: grey; color: white;">
+            <label for="retailerEmail" style="font-size: large;">Retailer Email:</label>
+            <input type="email" id="retailerEmail" name="retailerEmail" required /><br />
+    
+            <label for="retailerPassword" style="font-size: large;" >Password:</label>
+            <input type="password" id="retailerPassword" name="retailerPassword" required /><br />
+    
+            <button type="submit">Login</button>
+        </form>
+
+
+    </div>
+   
+
+    <!-- Include your JavaScript file at the end -->
+    <script src="../jsfiles/retailerLogin.js"></script>
+</body>
+</html>

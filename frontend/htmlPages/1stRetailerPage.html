@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retailer Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('6859183.jpg'); /* Add your actual background image */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.527);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Retailer Page</h1>
+
+      <!-- Button to navigate to Retailer Signup Page -->
+      <button onclick="goToRetailerSignup()">Retailer Sign Up</button> 
+      <br>
+
+      <!-- Button to navigate to Retailer Login Page -->
+      <button onclick="goToRetailerLogin()" style="background-color: aliceblue; color: black;"> Retailer  Login </button>
+    </div>
+
+    <script>
+      function goToRetailerSignup() {
+        window.location.href = "../htmlPages/retailerSignup.html";
+      }
+
+      function goToRetailerLogin() {
+        window.location.href = "../htmlPages/retailerLogin.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agritech Startup Signup</title>
+    <link rel="stylesheet" href="../cssFiles/2ndPage.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="vid.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-container">
+      <div class="container">
+        <h1>WELCOME TO FARMERS CONNECT</h1>
+        <h2>Create an account</h2>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="landnumber">khatha-Number</label>
+            <input type="text" id="unique-number" name="landnumber" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <select id="address" name="address" required>
+              <option value="">Select an address</option>
+              <option value="Tumkur">Tumkur</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Mandya">Mandya</option>
+              <option value="Mysore">Mysore</option>
+              <option value="Raichur">Raichur</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" onclick="submitForm()" id="submit">
+            Create Account
+          </button>
+        </form>
+
+        <button id="home">HOME</button>
+      </div>
+      <script src="../jsfiles/2ndPage.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retailer Signup</title>
+    <link rel="stylesheet" href="../cssFiles/retailerSignup.css">
+
+  </head>
+  <body>
+    <h1>Retailer Signup</h1>
+
+    <!-- Create a form for retailer signup -->
+    <form id="retailerSignupForm">
+      <label for="retailerName">Retailer Name:</label>
+      <input type="text" id="retailerName" name="retailerName" required /><br />
+
+      <label for="retailerEmail">Retailer Email:</label>
+      <input
+        type="email"
+        id="retailerEmail"
+        name="retailerEmail"
+        required
+      /><br />
+
+      <label for="retailerPhone">Retailer Phone:</label>
+      <input
+        type="text"
+        id="retailerPhone"
+        name="retailerPhone"
+        required
+      /><br />
+
+      <label for="retailerPassword">Password:</label>
+      <input
+        type="password"
+        id="retailerPassword"
+        name="retailerPassword"
+        required
+      /><br />
+
+      <label for="gstNumber">GST Number:</label>
+      <input type="text" id="gstNumber" name="gstNumber" required />
+
+      <label for="panNumber">PAN Number:</label>
+      <input type="text" id="panNumber" name="panNumber" required />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <button type="button" onclick="submitRetailerSignup()">Sign Up</button>
+      <img style="position: absolute; width: 250px; height: 250px; bottom: 5%; left: 70%;" src="signupVector.png" alt="Signup vector">
+
+      <script src="../jsfiles/retailerSignup.js"></script>
+    </form>
+  </body>
+</html>
